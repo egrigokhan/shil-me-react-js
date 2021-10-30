@@ -1,0 +1,40 @@
+{
+  rooms: [
+    {
+      title: TITLE,
+      background_color: HEX,
+      shadow: BOOL,
+      last_updated: DATE,
+      items: [
+        {
+          id: ID,
+          image_url: IMAGE_URL,
+          asset_metadata: METADATA_FROM_OPENSEA,
+          
+          position: {
+            x: X_POSITION,
+            y: Y_POSITION
+          },
+          size: {
+            width: WIDTH,
+            height: HEIGHT
+          }
+          matting: {
+            applied: BOOL,
+            color: HEX,
+            percentage: PERCENTAGE
+          },
+          frame: {
+            applied: BOOL,
+            color_or_image: BOOL (TRUE for color, FALSE for image)
+            color: HEX,
+            image: URL,
+            width: WIDTH
+          }
+        }
+      ],
+    }]
+  owner: OWNER_USER_ID,
+  owner_url: OWNER_URL,
+  last_updated: DATE,
+}
